@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+#gameBoard {
+    display: grid;
+    min-height: 60vh;
+    max-width: 70%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1px;     
+}
+
+#gameBoard > div {
+    border: 1px solid black;
+}
+
+.top {
+    border-top: none !important;
+}
+
+.left {
+    border-left: none !important;
+}
+
+.right {
+    border-right: none !important;
+}
+
+.bottom {
+    border-bottom: none !important; 
+}
