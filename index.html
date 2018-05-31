@@ -6,21 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tic-Tac-Toe -- Ricardo Ledesma</title>
     <link type="text/css" rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
     <h1>FreeCodeCamp - TicTacToe</h1>
+
+    <div class="form">
+            <p>One or Two Players?</p>
+            <button>One</button>
+            <button>Two</button>
+    </div>
+
+    <div class="form letter">
+        <p><span id="playerQ"></span>X or O?</p>
+        <button>X</button>
+        <button>O</button>
+    </div>
+
+    <p id="prompt">
+        Current Player: 
+        <span id="currentPlayer"></span>
+    </p>
     <div id="gameBoard">
-        <div class="top left">X</div>
-        <div class="top">O</div>
-        <div class="top right">X</div>
-        <div class="left">O</div>
-        <div>O</div>
-        <div class="right">X</div>
-        <div class="bottom left">O</div>
-        <div class="bottom">X</div>
-        <div class="bottom right">O</div>
+        <div id="0" class="top left"></div>
+        <div id="1" class="top"></div>
+        <div id="2" class="top right"></div>
+        <div id="3" class="left"></div>
+        <div id="4"></div>
+        <div id="5" class="right"></div>
+        <div id="6" class="bottom left"></div>
+        <div id="7" class="bottom"></div>
+        <div id="8" class="bottom right"></div>
     </div>    
 
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
     <script data-main="app" src="app/require.js"></script>
 </body>
 </html>
